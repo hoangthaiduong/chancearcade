@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">ChanceArcade</title>
+  <desc id="desc">Blue arcade chance wheel emblem</desc>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="12" x2="108" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3E7CFF"/>
+      <stop offset="1" stop-color="#1655E8"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="32" y1="25" x2="95" y2="93" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#DDE8FF" stop-opacity=".82"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#1848BC" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect x="6" y="6" width="116" height="116" rx="34" fill="url(#bg)" filter="url(#shadow)"/>
+  <circle cx="64" cy="64" r="37" fill="none" stroke="url(#shine)" stroke-width="6"/>
+  <path d="M64 27v20M101 64H81M64 101V81M27 64h20" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".82"/>
+  <path d="M84.5 43.5 76 62l-18.5 8.5L66 52l18.5-8.5Z" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="64" cy="64" r="6" fill="#fff"/>
+  <circle cx="96" cy="30" r="5" fill="#AFC6FF" opacity=".72"/>
+</svg>

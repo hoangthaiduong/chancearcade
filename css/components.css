@@ -1,0 +1,8 @@
+/* Component-level helpers kept separate for easy visual tuning. */
+.tool-palette{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.tool-tile{padding:10px;border:1px solid #e4ebf3;border-radius:11px;background:#fff;text-align:left;transition:.18s}.tool-tile:hover{border-color:#cad8ec;transform:translateY(-1px);box-shadow:var(--shadow)}.tool-tile.active{border-color:#cddcff;background:#f2f6ff}.tool-tile .tt-icon{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:#eef4ff;color:var(--blue);margin-bottom:7px}.tool-tile strong{display:block;font-size:11px}.tool-tile span{display:block;font-size:9px;color:#7a8ba3;margin-top:2px;line-height:1.35}
+@media (max-width:620px){.tool-palette{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ===== Component polish for random cycling and coin states ===== */
+.random-cycling-box::after{content:"";position:absolute;left:12%;right:12%;top:16%;height:1px;background:linear-gradient(90deg,transparent,rgba(36,99,255,.22),transparent);opacity:.55;animation:randomScan 1.15s ease-in-out infinite}
+@keyframes randomScan{0%{transform:translateX(-25%);opacity:.05}45%{opacity:.72}100%{transform:translateX(25%);opacity:.05}}
+@media(prefers-reduced-motion:reduce){.random-cycling-box::after{animation:none}}
